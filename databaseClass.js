@@ -25,13 +25,11 @@ const offlineDatabase = ()=> {
 
     let ref = function(path) {
         pathObject = path.split("/").reduce((data,i) => data[i], data);
-        data = data[path.split("/").reduce((data,i) => data[i], data)]
         return this;
     }
 
     let push = function(path) {
-        pathObject = path.split("/").reduce((data,i) => data[i], data);
-        this.print();
+
     }
 
     let once = function(callback) {
